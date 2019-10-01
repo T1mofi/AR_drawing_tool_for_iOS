@@ -36,11 +36,16 @@ Swift language and integrated development environment xcode will be used to deve
 | SceneKit | Create 3D games and add 3D content to apps using high-level scene descriptions. Easily add animations, physics simulation, particle effects, and realistic physically based rendering. SceneKit combines a high-performance rendering engine with a descriptive API for import, manipulation, and rendering of 3D assets. |
 
 ### 2.2 User Interfaces
-AR scene screen provides acces to the main functionaliti of the application. Allows to add 3D objects and select add mode. 
+AR scene screen provides acces to the main functionaliti of the application. Allows to add 3D objects and select add mode.
+
 ![AR scene screen](../Images/Mockups/AR%20Drawing%20mockup1%20entity.png)
+
 Screen for choosing a shape. Allows to select shape of the object it's color and size.
+
 ![Shape Picker](../Images/Mockups/ShapePicker.png)
+
 Color picker screen allow to select Color.
+
 ![Color Picker](../Images/Mockups/ColorPicker.png)
 
 ### 2.3 User Characteristics
