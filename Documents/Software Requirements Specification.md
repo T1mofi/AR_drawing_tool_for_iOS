@@ -59,5 +59,14 @@ The application can be used only in good lighting.
 ## 3. System Requirements
 
 ### 3.1 Functional Requirements
+display reality
+add augmented reality
+reset scene
+undo last
+shape piccker -> size picker 
+color picker
+
 
 ### 3.2 Non-Functional Requirements
+without lags and bugs
+constant position on scene
