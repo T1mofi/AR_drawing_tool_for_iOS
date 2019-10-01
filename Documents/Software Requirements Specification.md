@@ -37,11 +37,11 @@ Swift language and integrated development environment xcode will be used to deve
 
 ### 2.2 User Interfaces
 AR scene screen provides acces to the main functionaliti of the application. Allows to add 3D objects and select add mode. 
-![AR scene screen](AR%20Drawing%20mockup1%20entity.png)
+![AR scene screen](../Images/Mockups/AR%20Drawing%20mockup1%20entity.png)
 Screen for choosing a shape. Allows to select shape of the object it's color and size.
-![Shape Picker](ShapePicker.png)
+![Shape Picker](../Images/Mockups/ShapePicker.png)
 Color picker screen allow to select Color.
-![Color Picker](ColorPicker.png)
+![Color Picker](../Images/Mockups/ColorPicker.png)
 
 ### 2.3 User Characteristics
 Children and youth who are interested in technology. And people of other age categories who are interested AR.
