@@ -52,21 +52,28 @@ Color picker screen allow to select Color.
 Children and youth who are interested in technology. And people of other age categories who are interested AR.
 
 ### 2.4 Assumptions and Dependencies
-User permission to access the camera must be obtained.
-The compass and accelerometer of the device should work correctly.
-The application can be used only in good lighting.
+1. User permission to access the camera must be obtained.
+2. The compass and accelerometer of the device should work correctly.
+3. The application can be used only in good lighting.
 
 ## 3. System Requirements
 
-### 3.1 Functional Requirements
-display reality
-add augmented reality
-reset scene
-undo last
-shape piccker -> size picker 
-color picker
+### 3.1 Functional 
+What?Why?
+1. display camera image
+2. add augmented reality
+	Augmented realiti is a core functionality
+3. add shapes
+4. place shape in front of camera
+5. place shape on the surface
+4. undo last	
+6. reset scene
+8. choose chape
+7. shape piccker 
+9.			    \\-> size picker 
+8. 			     \-> color picker
 
 
 ### 3.2 Non-Functional Requirements
-without lags and bugs
-constant position on scene
+1. No less than 30 fps
+2. constant position of objects on scene
