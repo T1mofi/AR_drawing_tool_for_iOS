@@ -13,13 +13,10 @@ The purpose of AR Drawing tool for iOS is lets users make simple 3D drawings in 
 | ARKit | Framework that helps integrate iOS device camera and motion features to produce augmented reality experiences in app or game. |
 | Scene | The SceneKit scene to be displayed in view. |
 
-### 1.3 Intended Audience and Reading Suggestions
-Children and youth who are interested in technology. And people of other age categories who are interested AR.
-
-### 1.4 Project scope
+### 1.3 Project scope
 The "AR Drawing tool for iOS" allows users to create simple 3D drawings in AR. The user can select objects from the list of basic shapes, select their color and size, and then place them in front of the camera or on the surface.
 
-### 1.5 References
+### 1.4 References
 * [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
 * [Apple Developer Documentation](https://developer.apple.com/documentation)
 
