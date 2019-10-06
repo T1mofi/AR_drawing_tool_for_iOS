@@ -33,7 +33,7 @@ Swift language and integrated development environment xcode will be used to deve
 | SceneKit | Create 3D games and add 3D content to apps using high-level scene descriptions. Easily add animations, physics simulation, particle effects, and realistic physically based rendering. SceneKit combines a high-performance rendering engine with a descriptive API for import, manipulation, and rendering of 3D assets. |
 
 ### 2.2 User Interfaces
-AR scene screen provides acces to the main functionaliti of the application. Allows to add 3D objects and select add mode.
+AR scene screen provides acces to the main functionality of the application. Allows to add 3D objects and select add mode.
 
 ![AR scene screen](../Images/Mockups/AR%20Drawing%20mockup1%20entity.png)
 
@@ -57,18 +57,19 @@ Children and youth who are interested in technology. And people of other age cat
 
 ### 3.1 Functional 
 What?Why?
-1. display camera image
-2. add augmented reality
-	Augmented realiti is a core functionality
-3. add shapes
-4. place shape in front of camera
-5. place shape on the surface
-4. undo last	
-6. reset scene
-8. choose chape
-7. shape piccker 
-9.			    \\-> size picker 
-8. 			     \-> color picker
+1. The application should display the camera image in real time.
+Because it needed for core functionality.
+2. The application should display AR objects and keep their position on scene constant. Because it needed for core functionality.
+3. The application should provide the ability to add new AR objects to the scene.
+Because it needed for core functionality.
+4. It should be possible to place the AR object against the camera. At a distance of 20 centimeters.
+5. It should be possible to place the AR object on the detected surface.
+4. It should be possible to undo the last action.	
+6. It should be possible to restet the last action.
+8. It should be possible to choose shape from basic shapes.
+7. Shape picker should provide the ability to choose basic shape its size and color.
+9.			    \\-> Size picker should provide the ability to choose size of shape between(from?) 3 sezes: small/medium/large.
+8. 			     \-> Color picker should provide the ability to choose color of shape using the color palette and brightness level
 
 
 ### 3.2 Non-Functional Requirements
