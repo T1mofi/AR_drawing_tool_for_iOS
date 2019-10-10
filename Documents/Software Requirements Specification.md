@@ -9,9 +9,12 @@ The purpose of AR Drawing tool for iOS is lets users make simple 3D drawings in 
 | Term | Definition |
 |:---|:---|
 | AR | Augmented reality (AR) is a type of interactive, reality-based display environment that takes the capabilities of computer generated display, sound, text and effects to enhance the user's real-world experience. | 
-| SceneKit | High-level 3D graphics framework that helps create 3D animated scenes and effects in apps. | 
-| ARKit | Framework that helps integrate iOS device camera and motion features to produce augmented reality experiences in app or game. |
 | Scene | The SceneKit scene to be displayed in view. |
+| IUndo | Function performed to reverse the action of an earlier action. |
+| Reset | Function performed to reverse all user actions. |
+| AR object | 3D object that can be displayed in the AR. |
+| Shape | AR object that has three dimensions. |
+| Device | Mobile phone with certain characteristics. |
 
 ### 1.3 Project scope
 The "AR Drawing tool for iOS" allows users to create simple 3D drawings in AR. The user can select objects from the list of basic shapes, select their color and size, and then place them in front of the camera or on the surface.
@@ -29,7 +32,7 @@ Swift language and integrated development environment xcode will be used to deve
 |:---|:---|
 | Foundation | The Foundation framework provides a base layer of functionality for apps and frameworks, including data storage and persistence, text processing, date and time calculations, sorting and filtering, and networking. |
 | UIKit | Used to construct and manage a graphical, event-driven user interface. |
-| ARKit | Integrate iOS device camera and motion features to produce augmented reality experiences in your app or game. |
+| ARKit | Integrate iOS device camera and motion features to produce augmented reality experiences in app or game. |
 | SceneKit | Create 3D games and add 3D content to apps using high-level scene descriptions. Easily add animations, physics simulation, particle effects, and realistic physically based rendering. SceneKit combines a high-performance rendering engine with a descriptive API for import, manipulation, and rendering of 3D assets. |
 
 ### 2.2 User Interfaces
@@ -52,10 +55,13 @@ Children and youth who are interested in technology. And people of other age cat
 1. User permission to access the camera must be obtained.
 2. The compass and accelerometer of the device should work correctly.
 3. The application can be used only in good lighting.
+// correct
+4. When user interact with app he should move device slowly. 
+?5. There are not bad not structured surfaces.
 
 ## 3. System Requirements
 
-### 3.1 Functional 
+### 3.1 Functional Requirements
 What?Why?
 1. The application should display the camera image in real time.
 Because it needed for core functionality.
@@ -69,7 +75,7 @@ Because it needed for core functionality.
 8. It should be possible to choose shape from basic shapes.
 7. Shape picker should provide the ability to choose basic shape its size and color.
 9.			    \\-> Size picker should provide the ability to choose size of shape between(from?) 3 sezes: small/medium/large.
-8. 			     \-> Color picker should provide the ability to choose color of shape using the color palette and brightness level
+8. 			     \-> Color picker should provide the ability to choose color of shape using the color palette(in glossary?) and brightness level
 
 
 ### 3.2 Non-Functional Requirements
