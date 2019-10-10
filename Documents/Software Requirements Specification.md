@@ -31,8 +31,8 @@ The purpose of AR Drawing tool for iOS is lets users make simple 3D drawings in 
 |:---|:---|
 | AR | Augmented reality (AR) is a type of interactive, reality-based display environment that takes the capabilities of computer generated display, sound, text and effects to enhance the user's real-world experience. | 
 | Scene | The SceneKit scene to be displayed in view. |
-| Undo | Function performed to reverse the last action. |
-| Reset | Function performed to reverse all user actions. |
+| Undo | Function is executed to reverse the last action. |
+| Reset | Function is executed to reverse all user actions. |
 | AR object | 3D object that can be displayed in the AR. |
 | Shape | AR object that has three dimensions. |
 | Device | Mobile phone with certain characteristics. |
