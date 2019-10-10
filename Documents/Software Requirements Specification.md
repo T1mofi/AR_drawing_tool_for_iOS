@@ -26,7 +26,7 @@ The "AR Drawing tool for iOS" allows users to create simple 3D drawings in AR. T
 ## 2. User Requirements
 
 ### 2.1 Software Interfaces
-Swift language and integrated development environment xcode will be used to develop the application.
+Swift language and integrated development environment Xcode will be used to develop the application.
 
 | Framework | Discription |
 |:---|:---|
@@ -55,9 +55,7 @@ Children and youth who are interested in technology. And people of other age cat
 1. User permission to access the camera must be obtained.
 2. The compass and accelerometer of the device should work correctly.
 3. The application can be used only in good lighting.
-// correct
-4. When user interact with app he should move device slowly. 
-?5. There are not bad not structured surfaces.
+4. When user interact with app he should move device at slow, steady pace.
 
 ## 3. System Requirements
 
