@@ -60,21 +60,19 @@ Children and youth who are interested in technology. And people of other age cat
 ## 3. System Requirements
 
 ### 3.1 Functional Requirements
-What?Why?
-1. The application should display the camera image in real time.
-Because it needed for core functionality.
-2. The application should display AR objects and keep their position on scene constant. Because it needed for core functionality.
-3. The application should provide the ability to add new AR objects to the scene.
-Because it needed for core functionality.
-4. It should be possible to place the AR object against the camera. At a distance of 20 centimeters.
-5. It should be possible to place the AR object on the detected surface.
-4. It should be possible to undo the last action.	
-6. It should be possible to restet the last action.
-8. It should be possible to choose shape from basic shapes.
-7. Shape picker should provide the ability to choose basic shape its size and color.
-9.			    \\-> Size picker should provide the ability to choose size of shape between(from?) 3 sezes: small/medium/large.
-8. 			     \-> Color picker should provide the ability to choose color of shape using the color palette(in glossary?) and brightness level
+The user is provided with the following options:
 
+| Function | Requirments |
+|:---|:---|
+| Camera image | The application should display the camera image in real time. |
+| Display AR | Display AR objects and keep their position on scene constant. |
+| Add AR object | The application should provide the ability to add new AR objects to the scene. |
+| Place AR object | It should be possible to place the AR object against the camera. At a distance of 20 centimeters. Or on the detected surface. |
+| Undo | Delete last added AR object. |
+| Reset | Delete all added AR objects. |
+| Shape picker | It should be possible to choose shape from basic shapes. |
+| Size | Size picker should provide the ability to choose size of shape from 3 sezes: small, medium or large. |
+| Color picker | Color picker should provide the ability to choose color of shape using the color palette and brightness level |
 
 ### 3.2 Non-Functional Requirements
 1. No less than 30 fps
