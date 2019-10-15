@@ -103,15 +103,15 @@ The user is provided with the following options:
 
 | Function | Requirments |
 |:---|:---|
-| Camera image | The application should display the camera image in real time. |
+| Display camera image | The application should display the camera image in real time. |
 | Display AR | Display AR objects and keep their position on scene constant. |
 | Add AR object | The application should provide the ability to add new AR objects to the scene. |
 | Place AR object | It should be possible to place the AR object against the camera. At a distance of 20 centimeters. Or on the detected surface. |
 | Undo | Delete last added AR object. |
 | Reset | Delete all added AR objects. |
-| Shape picker | It should be possible to choose shape from basic shapes. |
-| Size | Size picker should provide the ability to choose size of shape from 3 sezes: small, medium or large. |
-| Color picker | Color picker should provide the ability to choose color of shape using the color palette and brightness level |
+| Choose shape | It should be possible to choose shape from basic shapes. |
+| Choose Size | Size picker should provide the ability to choose size of shape from 3 sezes: small, medium or large. |
+| Choose olor | Color picker should provide the ability to choose color of shape using the color palette and brightness level |
 
 <a name="3.2"/>
 
