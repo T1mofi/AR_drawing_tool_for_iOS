@@ -185,7 +185,7 @@ User agreement to use the camera is required.
 
 ### 2.1 Choose AR object
 
-![Sequence diagram (Choose AR object)](../Images/Diagrams/RegistrationSeqDiagram.jpg)  
+![Sequence diagram (Choose AR object)](../Images/Diagrams/Choose_AR_object_sequence_diagram.png)  
 
 <a name = "place_ar_object_sequence"/>
 
