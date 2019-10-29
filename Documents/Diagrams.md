@@ -191,7 +191,7 @@ User agreement to use the camera is required.
 
 ### 2.2 Place AR object
 
-![Sequence diagram (Place AR object)](../Images/Diagrams/Place_AR_object_activity_diagram.png)  
+![Sequence diagram (Place AR object)](../Images/Diagrams/Place_AR_object_sequence_diagram.png)  
 
 
 
