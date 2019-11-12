@@ -18,7 +18,7 @@
    3.2 [Place AR object](#place_ar_object_sequence)  
 4. [State diagram](#state_diagram)  
 5. [Class diagram](#class_diagram)  
-6. [Components diagram](#components_diagram)  
+6. [Components and deployment diagram](#components_diagram)  
 
 
 <a name="use_case_diagram"/>
@@ -211,9 +211,9 @@ User agreement to use the camera is required.
 
 <a name = "components_diagram"/>
 
-## 6. Components diagram
+## 6. Components and deployment diagram
 
-![Components diagram](../Images/Diagrams/ComponentDiagram.png) 
+![Components and deployment diagram](../Images/Diagrams/ComponentAndDepoymentDiagram.png) 
 
 
 
