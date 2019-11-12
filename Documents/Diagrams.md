@@ -16,9 +16,9 @@
 3. [Sequence diagrams](#sequence_diagrams)  
    3.1 [Choose AR object](#choose_ar_object_sequence)  
    3.2 [Place AR object](#place_ar_object_sequence)  
-4. [State diagrams](#state_diagram)  
-5. [Class diagrams](#class_diagram)  
-6. [Components diagrams](#components_diagram)  
+4. [State diagram](#state_diagram)  
+5. [Class diagram](#class_diagram)  
+6. [Components diagram](#components_diagram)  
 
 
 <a name="use_case_diagram"/>

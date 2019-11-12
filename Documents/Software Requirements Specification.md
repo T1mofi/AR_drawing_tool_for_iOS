@@ -111,7 +111,7 @@ The user is provided with the following options:
 | Reset | Delete all added AR objects. |
 | Choose shape | It should be possible to choose shape from basic shapes. |
 | Choose Size | Size picker should provide the ability to choose size of shape from 3 sezes: small, medium or large. |
-| Choose olor | Color picker should provide the ability to choose color of shape using the color palette and brightness level |
+| Choose color | Color picker should provide the ability to choose color of shape using the color palette and brightness level |
 
 <a name="3.2"/>
 
