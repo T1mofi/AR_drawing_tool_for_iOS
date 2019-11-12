@@ -16,6 +16,10 @@
 3. [Sequence diagrams](#sequence_diagrams)  
    3.1 [Choose AR object](#choose_ar_object_sequence)  
    3.2 [Place AR object](#place_ar_object_sequence)  
+4. [State diagrams](#state_diagram)  
+5. [Class diagrams](#class_diagram)  
+6. [Components diagrams](#components_diagram)  
+
 
 <a name="use_case_diagram"/>
 
@@ -193,6 +197,23 @@ User agreement to use the camera is required.
 
 ![Sequence diagram (Place AR object)](../Images/Diagrams/Place_AR_object_sequence_diagram.png)  
 
+<a name = "state_diagram"/>
+
+## 4. State diagram
+
+![State diagram](../Images/Diagrams/StateDiagram.png)
+
+<a name = "class_diagram"/>
+
+## 5. Class diagram
+
+![Class diagram](../Images/Diagrams/ClassDiagram.png) 
+
+<a name = "components_diagram"/>
+
+## 6. Components diagram
+
+![Components diagram](../Images/Diagrams/ComponentDiagram.png) 
 
 
 
