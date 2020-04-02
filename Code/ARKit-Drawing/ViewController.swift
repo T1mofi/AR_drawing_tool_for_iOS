@@ -21,6 +21,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         didSet {
             for node in planeNodes {
                 node.isHidden = !isPlaneVisualizationEnabled
+                sceneView.debugOptions = isPlaneVisualizationEnabled ? [.showFeaturePoints] : []
             }
         }
     }
@@ -164,7 +165,8 @@ extension ViewController {
         
         guard let match = results.first else { return }
         let transform = match.worldTransform
-        node.position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
+        let yOffset = node.boundingBox.max.y
+        node.position = SCNVector3(transform.columns.3.x, transform.columns.3.y + yOffset, transform.columns.3.z)
         addNodeToSceneRoot(node)
     }
     
