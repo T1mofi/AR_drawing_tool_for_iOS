@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,42 +19,6 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <gestureRecognizers/>
                             </arscnView>
-                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGv-ui-K4i">
-                                <rect key="frame" x="317" y="802" width="80" height="40"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KbE-Uf-rq0">
-                                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boN-p2-qOg">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
-                                            <state key="normal" title="Options">
-                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="m4F-1s-QjA" kind="popoverPresentation" identifier="showOptions" popoverAnchorView="boN-p2-qOg" id="dPo-A4-PWz">
-                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                </segue>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="boN-p2-qOg" secondAttribute="bottom" id="Lfd-LS-wi9"/>
-                                        <constraint firstItem="boN-p2-qOg" firstAttribute="leading" secondItem="KbE-Uf-rq0" secondAttribute="leading" id="Q8q-jo-8ci"/>
-                                        <constraint firstItem="boN-p2-qOg" firstAttribute="top" secondItem="KbE-Uf-rq0" secondAttribute="top" id="aQz-J6-OqW"/>
-                                        <constraint firstAttribute="trailing" secondItem="boN-p2-qOg" secondAttribute="trailing" id="lm8-ke-FnT"/>
-                                    </constraints>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="WC1-A7-9gj"/>
-                                    <constraint firstAttribute="height" constant="40" id="cf2-Bs-LrN"/>
-                                </constraints>
-                                <blurEffect style="light"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </visualEffectView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RK5-mG-jKn">
                                 <rect key="frame" x="16" y="813" width="158" height="29"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KaD-5l-R64">
@@ -113,27 +74,78 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFm-Cb-c2b" customClass="CircleButton" customModule="ARKit_Drawing" customModuleProvider="target">
+                                <rect key="frame" x="334" y="782" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6SU-bH-TKZ"/>
+                                    <constraint firstAttribute="width" constant="50" id="h3f-5n-8yf"/>
+                                </constraints>
+                                <state key="normal" image="pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="editButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dnR-8L-6vB"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGv-ui-K4i">
+                                <rect key="frame" x="228" y="787" width="80" height="40"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KbE-Uf-rq0">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boN-p2-qOg">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                            <state key="normal" title="Options">
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="m4F-1s-QjA" kind="popoverPresentation" identifier="showOptions" popoverAnchorView="boN-p2-qOg" id="dPo-A4-PWz">
+                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                </segue>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="boN-p2-qOg" secondAttribute="bottom" id="Lfd-LS-wi9"/>
+                                        <constraint firstItem="boN-p2-qOg" firstAttribute="leading" secondItem="KbE-Uf-rq0" secondAttribute="leading" id="Q8q-jo-8ci"/>
+                                        <constraint firstItem="boN-p2-qOg" firstAttribute="top" secondItem="KbE-Uf-rq0" secondAttribute="top" id="aQz-J6-OqW"/>
+                                        <constraint firstAttribute="trailing" secondItem="boN-p2-qOg" secondAttribute="trailing" id="lm8-ke-FnT"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="WC1-A7-9gj"/>
+                                    <constraint firstAttribute="height" constant="40" id="cf2-Bs-LrN"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="Hss-D4-YVK" secondAttribute="trailing" id="9BF-a4-DTs"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="Hss-D4-YVK" secondAttribute="bottom" id="9oE-EN-HGn"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="nGv-ui-K4i" secondAttribute="bottom" constant="20" id="EI9-ck-jaV"/>
                             <constraint firstItem="Hss-D4-YVK" firstAttribute="top" secondItem="ZCE-wD-2E2" secondAttribute="top" id="OgV-19-dSa"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="RK5-mG-jKn" secondAttribute="bottom" constant="20" id="Pfd-Nb-YUs"/>
+                            <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="KFm-Cb-c2b" secondAttribute="bottom" constant="30" id="S2U-Lo-4vh"/>
                             <constraint firstItem="RK5-mG-jKn" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" constant="16" id="SnR-GG-ypT"/>
-                            <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="nGv-ui-K4i" secondAttribute="trailing" constant="17" id="i2L-km-UXq"/>
+                            <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="KFm-Cb-c2b" secondAttribute="trailing" constant="30" id="r5o-0G-CLW"/>
                             <constraint firstItem="Hss-D4-YVK" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" id="tq9-FB-eeV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZCE-wD-2E2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="L8T-pV-GPc"/>
                     <connections>
+                        <outlet property="editButton" destination="KFm-Cb-c2b" id="GrS-tR-DSF"/>
                         <outlet property="sceneView" destination="Hss-D4-YVK" id="9bm-dS-QB2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1162.4000000000001" y="59.820089955022496"/>
+            <point key="canvasLocation" x="-253.62318840579712" y="59.598214285714285"/>
         </scene>
         <!--Options-->
         <scene sceneID="XWc-5m-lzL">
@@ -141,7 +153,27 @@
                 <viewControllerPlaceholder storyboardName="Options" id="m4F-1s-QjA" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLH-a2-EOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="59"/>
+            <point key="canvasLocation" x="331.8840579710145" y="58.928571428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ual-TB-Gdu">
+            <objects>
+                <viewController id="AkQ-2h-ifc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wFC-mz-R6m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="OTx-4s-gF1"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tz-IY-LWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="60"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+    </resources>
 </document>
