@@ -8,19 +8,24 @@
 
 import UIKit
 
-protocol ShapePickerDelegate {
+protocol ShapePickerDelegate: NSObjectProtocol {
     func prepareToHide(loadNewShape: Bool)
 }
 
 class ShapePickerViewController: UIViewController {
 
-    var delegate: ShapePickerDelegate?
+    @IBOutlet var colorView: UIView!
+    @IBOutlet var sizeSegmentControl: UIView!
+    
+    weak var delegate: ShapePickerDelegate?
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let recognizer = UITapGestureRecognizer()
+        recognizer.addTarget(self, action: #selector(goToEditColor(_:)))
+        colorView.addGestureRecognizer(recognizer)
     }
 
 }
@@ -38,6 +43,12 @@ extension ShapePickerViewController {
             delegate.prepareToHide(loadNewShape: false)
         }
     }
+    
+    @objc func goToEditColor(_ gestureRecognizer: UITapGestureRecognizer) {
+        guard let controller = ColorPickerViewController.storyboardInstance() else { return }
+        controller.delegate = self
+        self.present(controller, animated: true, completion: nil)
+    }
 }
 
 // MARK: - Public Functions
@@ -49,6 +60,21 @@ extension ShapePickerViewController {
         return storyboard.instantiateInitialViewController() as? ShapePickerViewController
     }
     
+}
+
+// MARK: - Private Functions
+fileprivate extension ShapePickerViewController {
+   
+}
+
+// MARK: - ColorPickerDelegat
+extension ShapePickerViewController: ColorPickerDelegate {
+    func colorSelected(selectedColor: UIColor?) {
+        if let color = selectedColor {
+            self.colorView.backgroundColor = color
+        }
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 // MARK: - UICollectionViewDelegate
