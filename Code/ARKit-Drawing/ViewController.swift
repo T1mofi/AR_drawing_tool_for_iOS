@@ -2,16 +2,17 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+fileprivate enum ObjectPlacementMode {
+    case freeform, plane, image
+}
+
+class ViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var editButton: CircleButton!
     let configuration = ARWorldTrackingConfiguration()
-    
-    enum ObjectPlacementMode {
-        case freeform, plane, image
-    }
-    
-    var objectMode: ObjectPlacementMode = .freeform
+
+    fileprivate var objectMode: ObjectPlacementMode = .freeform
     
     var selectedNode: SCNNode?
     var placedNodes: [SCNNode] = []
@@ -28,9 +29,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        editButton.layer.cornerRadius = editButton.bounds.size.width / 2
+        editButton.layer.masksToBounds = true
         
         sceneView.delegate = self
         sceneView.autoenablesDefaultLighting = true
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,7 +54,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             optionsViewController.delegate = self
         }
     }
-    
+  
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         
@@ -83,6 +87,18 @@ extension ViewController {
             break
         }
     }
+    
+    @IBAction func editButtonTapped(_ sender: CircleButton) {
+        print("Edit button tapped")
+
+        guard let editController = ShapePickerViewController.storyboardInstance() else {
+            return
+        }
+        editController.delegate = self
+        present(editController, animated: true, completion: nil)
+        
+        //self.navigationController?.pushViewController(controller, animated: true)
+    }
 }
 
 // MARK: - OptionsViewControllerDelegate
@@ -107,7 +123,7 @@ extension ViewController: OptionsViewControllerDelegate {
 }
 
 // MARK: - ARSCNViewDelegate
-extension ViewController {
+extension ViewController: ARSCNViewDelegate  {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         if let planeAnchor = anchor as? ARPlaneAnchor {
             nodeAdded(node, for: planeAnchor)
@@ -121,6 +137,15 @@ extension ViewController {
         plane.width = CGFloat(planeAnchor.extent.x)
         plane.height = CGFloat(planeAnchor.extent.z)
     }
+}
+
+// MARK: - ShapePickerDelegate
+extension ViewController: ShapePickerDelegate {
+    func prepareToHide(loadNewShape: Bool) {
+        print(loadNewShape)
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 // MARK: - Private functions
