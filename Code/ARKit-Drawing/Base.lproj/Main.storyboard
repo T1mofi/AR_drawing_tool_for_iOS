@@ -19,55 +19,12 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <gestureRecognizers/>
                             </arscnView>
-                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RK5-mG-jKn">
-                                <rect key="frame" x="16" y="813" width="158" height="29"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KaD-5l-R64">
-                                    <rect key="frame" x="0.0" y="0.0" width="158" height="29"/>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOf-A0-41k">
+                                <rect key="frame" x="20" y="802" width="186" height="40"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LKb-da-txp">
+                                    <rect key="frame" x="0.0" y="0.0" width="186" height="40"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAH-ye-saP">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="29"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ldw-TI-gOS">
-                                                <rect key="frame" x="0.0" y="0.0" width="158" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <subviews>
-                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-nl-i8i">
-                                                        <rect key="frame" x="0.0" y="0.0" width="158" height="30"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <segments>
-                                                            <segment title="Freeform"/>
-                                                            <segment title="Plane"/>
-                                                            <segment title="Image"/>
-                                                        </segments>
-                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <connections>
-                                                            <action selector="changeObjectMode:" destination="BV1-FR-VrT" eventType="valueChanged" id="fwT-tb-oeL"/>
-                                                        </connections>
-                                                    </segmentedControl>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="jVE-nl-i8i" firstAttribute="leading" secondItem="Ldw-TI-gOS" secondAttribute="leading" id="RUs-7Y-N2H"/>
-                                                    <constraint firstAttribute="trailing" secondItem="jVE-nl-i8i" secondAttribute="trailing" id="Tv0-nA-U3D"/>
-                                                    <constraint firstAttribute="bottom" secondItem="jVE-nl-i8i" secondAttribute="bottom" id="riY-St-JGW"/>
-                                                    <constraint firstItem="jVE-nl-i8i" firstAttribute="top" secondItem="Ldw-TI-gOS" secondAttribute="top" id="srf-Cl-HLA"/>
-                                                </constraints>
-                                            </view>
-                                            <vibrancyEffect>
-                                                <blurEffect style="light"/>
-                                            </vibrancyEffect>
-                                        </visualEffectView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="RAH-ye-saP" secondAttribute="trailing" id="nMt-eN-pBM"/>
-                                        <constraint firstItem="RAH-ye-saP" firstAttribute="top" secondItem="KaD-5l-R64" secondAttribute="top" id="oUA-4P-1Cy"/>
-                                        <constraint firstAttribute="bottom" secondItem="RAH-ye-saP" secondAttribute="bottom" id="qQx-wR-QMg"/>
-                                        <constraint firstItem="RAH-ye-saP" firstAttribute="leading" secondItem="KaD-5l-R64" secondAttribute="leading" id="tYW-wn-qxq"/>
-                                    </constraints>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="158" id="5d0-eI-fhj"/>
-                                    <constraint firstAttribute="height" constant="29" id="WNC-pW-iAf"/>
-                                </constraints>
                                 <blurEffect style="light"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -75,6 +32,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jVE-nl-i8i">
+                                <rect key="frame" x="20" y="802" width="186" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="U7E-A9-SxQ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Freeform"/>
+                                    <segment title="Plane"/>
+                                    <segment title="Image"/>
+                                </segments>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="changeObjectMode:" destination="BV1-FR-VrT" eventType="valueChanged" id="fwT-tb-oeL"/>
+                                </connections>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFm-Cb-c2b" customClass="CircleButton" customModule="ARKit_Drawing" customModuleProvider="target">
                                 <rect key="frame" x="334" y="782" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -128,13 +101,17 @@
                         <constraints>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="Hss-D4-YVK" secondAttribute="trailing" id="9BF-a4-DTs"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="Hss-D4-YVK" secondAttribute="bottom" id="9oE-EN-HGn"/>
+                            <constraint firstItem="jVE-nl-i8i" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" constant="20" id="Cam-iP-Q8l"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="nGv-ui-K4i" secondAttribute="bottom" constant="20" id="EI9-ck-jaV"/>
                             <constraint firstItem="Hss-D4-YVK" firstAttribute="top" secondItem="ZCE-wD-2E2" secondAttribute="top" id="OgV-19-dSa"/>
-                            <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="RK5-mG-jKn" secondAttribute="bottom" constant="20" id="Pfd-Nb-YUs"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="KFm-Cb-c2b" secondAttribute="bottom" constant="30" id="S2U-Lo-4vh"/>
-                            <constraint firstItem="RK5-mG-jKn" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" constant="16" id="SnR-GG-ypT"/>
+                            <constraint firstItem="oOf-A0-41k" firstAttribute="leading" secondItem="jVE-nl-i8i" secondAttribute="leading" id="f1V-XZ-2Sa"/>
+                            <constraint firstItem="oOf-A0-41k" firstAttribute="top" secondItem="jVE-nl-i8i" secondAttribute="top" id="gn5-mf-5Bi"/>
+                            <constraint firstItem="oOf-A0-41k" firstAttribute="trailing" secondItem="jVE-nl-i8i" secondAttribute="trailing" id="k96-Rl-ry3"/>
                             <constraint firstItem="KFm-Cb-c2b" firstAttribute="leading" secondItem="nGv-ui-K4i" secondAttribute="trailing" constant="26" id="oxq-HX-Ogj"/>
+                            <constraint firstItem="oOf-A0-41k" firstAttribute="bottom" secondItem="jVE-nl-i8i" secondAttribute="bottom" id="q6c-ND-aj9"/>
                             <constraint firstItem="ZCE-wD-2E2" firstAttribute="trailing" secondItem="KFm-Cb-c2b" secondAttribute="trailing" constant="30" id="r5o-0G-CLW"/>
+                            <constraint firstItem="ZCE-wD-2E2" firstAttribute="bottom" secondItem="jVE-nl-i8i" secondAttribute="bottom" constant="20" id="rtv-m9-BPI"/>
                             <constraint firstItem="Hss-D4-YVK" firstAttribute="leading" secondItem="ZCE-wD-2E2" secondAttribute="leading" id="tq9-FB-eeV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZCE-wD-2E2"/>
