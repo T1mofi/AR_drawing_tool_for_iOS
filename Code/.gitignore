@@ -21,7 +21,6 @@ xcuserdata/
 *.moved-aside
 *.xcuserstate
 *.xcuserdatad
-*xcshareddata
 
 ## Obj-C/Swift specific
 *.hmap
