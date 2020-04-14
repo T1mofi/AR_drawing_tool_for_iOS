@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,6 +64,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ozT-0F-7ix">
+                                <rect key="frame" x="10" y="108" width="394" height="412"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3Je-y3-po5">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UGl-3T-lIq">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lGi-j7-KkX">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OIm-H5-OZF">
+                                        <rect key="frame" x="266" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GXu-4a-xgT">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -71,9 +100,13 @@
                             <constraint firstItem="KRg-v7-4Tm" firstAttribute="trailing" secondItem="Uzo-Wl-SC8" secondAttribute="trailing" id="DL5-yw-Axz"/>
                             <constraint firstItem="bP4-tY-oSa" firstAttribute="centerX" secondItem="KdP-0h-40a" secondAttribute="centerX" id="DdL-Ml-qYz"/>
                             <constraint firstItem="KRg-v7-4Tm" firstAttribute="leading" secondItem="Uzo-Wl-SC8" secondAttribute="leading" id="IWh-7H-6HG"/>
+                            <constraint firstItem="Uzo-Wl-SC8" firstAttribute="trailing" secondItem="ozT-0F-7ix" secondAttribute="trailing" constant="10" id="JsK-sX-bpp"/>
                             <constraint firstItem="bP4-tY-oSa" firstAttribute="leading" secondItem="OyJ-Gu-Z3C" secondAttribute="leading" id="Oed-Ab-QCP"/>
+                            <constraint firstItem="ozT-0F-7ix" firstAttribute="top" secondItem="KRg-v7-4Tm" secondAttribute="bottom" constant="20" id="PRA-RJ-PRe"/>
                             <constraint firstItem="OmC-dU-t0M" firstAttribute="centerX" secondItem="KdP-0h-40a" secondAttribute="centerX" id="UW0-lP-ciL"/>
+                            <constraint firstItem="ozT-0F-7ix" firstAttribute="leading" secondItem="Uzo-Wl-SC8" secondAttribute="leading" constant="10" id="Xkg-TK-bVC"/>
                             <constraint firstItem="OyJ-Gu-Z3C" firstAttribute="top" secondItem="OmC-dU-t0M" secondAttribute="bottom" constant="10" id="bkm-7o-Ad3"/>
+                            <constraint firstItem="OmC-dU-t0M" firstAttribute="top" secondItem="ozT-0F-7ix" secondAttribute="bottom" constant="20" id="fat-dW-BBD"/>
                             <constraint firstItem="bP4-tY-oSa" firstAttribute="top" secondItem="m6B-7n-UJG" secondAttribute="bottom" constant="10" id="gT6-oK-yN2"/>
                             <constraint firstItem="KRg-v7-4Tm" firstAttribute="top" secondItem="Uzo-Wl-SC8" secondAttribute="top" id="hsC-LC-s3p"/>
                             <constraint firstItem="bP4-tY-oSa" firstAttribute="trailing" secondItem="OyJ-Gu-Z3C" secondAttribute="trailing" id="kZA-mO-C3F"/>
@@ -82,6 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="Uzo-Wl-SC8"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="ozT-0F-7ix" id="o6n-Re-e3M"/>
                         <outlet property="colorView" destination="OyJ-Gu-Z3C" id="eKY-y0-hrc"/>
                         <outlet property="sizeSegmentControl" destination="bP4-tY-oSa" id="Bxe-3e-tnc"/>
                     </connections>
