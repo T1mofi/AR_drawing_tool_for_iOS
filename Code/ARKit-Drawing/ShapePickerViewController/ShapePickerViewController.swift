@@ -40,7 +40,6 @@ class ShapePickerViewController: UIViewController {
         
         self.collectionView.register(UINib(nibName: "ShapeCollectionViewCell", bundle: nil),
                                      forCellWithReuseIdentifier: "ShapeCollectionViewCell")
-        self.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Base")
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
     }
@@ -50,14 +49,14 @@ class ShapePickerViewController: UIViewController {
 // MARK: - Actions
 extension ShapePickerViewController {
 
-  @IBAction func navigationButtonTapped(_ sender: UIBarButtonItem) {
+    @IBAction func navigationButtonTapped(_ sender: UIBarButtonItem) {
         guard let delegate = delegate else {
             return
         }
         if sender.tag == 1 {
             delegate.prepareToHide(loadNewShape: true)
         } else {
-            delegate.prepareToHide(loadNewShape: false)
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -116,9 +115,6 @@ extension ShapePickerViewController : UICollectionViewDataSource, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
     }
     
 }

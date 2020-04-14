@@ -15,7 +15,6 @@
 		373E33EA243B882B00EEF435 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E33E9243B882B00EEF435 /* CircleButton.swift */; };
 		379D2909243F5B39004F4672 /* ShapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D2907243F5B39004F4672 /* ShapeCollectionViewCell.swift */; };
 		379D290A243F5B39004F4672 /* ShapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379D2908243F5B39004F4672 /* ShapeCollectionViewCell.xib */; };
-		379D291124405D6F004F4672 /* ShapeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D291024405D6F004F4672 /* ShapeCollectionView.swift */; };
 		379D29172440767B004F4672 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D29132440767B004F4672 /* UIViewController+Extensions.swift */; };
 		379D29182440767B004F4672 /* Options.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379D29142440767B004F4672 /* Options.storyboard */; };
 		379D29192440767B004F4672 /* OptionsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D29152440767B004F4672 /* OptionsContainerViewController.swift */; };
@@ -38,7 +37,6 @@
 		373E33E9243B882B00EEF435 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		379D2907243F5B39004F4672 /* ShapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		379D2908243F5B39004F4672 /* ShapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShapeCollectionViewCell.xib; sourceTree = "<group>"; };
-		379D291024405D6F004F4672 /* ShapeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeCollectionView.swift; sourceTree = "<group>"; };
 		379D29132440767B004F4672 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		379D29142440767B004F4672 /* Options.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Options.storyboard; sourceTree = "<group>"; };
 		379D29152440767B004F4672 /* OptionsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsContainerViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				373E33BB243B09EF00EEF435 /* ShapePickerViewController.swift */,
-				379D291024405D6F004F4672 /* ShapeCollectionView.swift */,
 				373596D9243C7C2C00D97009 /* ShapePickerViewController.storyboard */,
 				379D290B243F5E74004F4672 /* ShapeCollectionViewCell */,
 				37359712243CC0D000D97009 /* ColorPicker */,
@@ -226,7 +223,6 @@
 				37359718243CC0D000D97009 /* GradientView.swift in Sources */,
 				373E33BC243B09EF00EEF435 /* ShapePickerViewController.swift in Sources */,
 				379D291A2440767B004F4672 /* OptionSelectorViewController.swift in Sources */,
-				379D291124405D6F004F4672 /* ShapeCollectionView.swift in Sources */,
 				373E33EA243B882B00EEF435 /* CircleButton.swift in Sources */,
 				37359717243CC0D000D97009 /* ColorPickerViewController.swift in Sources */,
 				BEDB2EDA200EABAD001C6BBC /* AppDelegate.swift in Sources */,
@@ -376,11 +372,11 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5ZMU3NJ9FM;
+				DEVELOPMENT_TEAM = 2N733A2D3Z;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AnjeyNov.ARKit-Drawing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iTeam.ARDrawingTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -395,11 +391,11 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5ZMU3NJ9FM;
+				DEVELOPMENT_TEAM = 2N733A2D3Z;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AnjeyNov.ARKit-Drawing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iTeam.ARDrawingTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

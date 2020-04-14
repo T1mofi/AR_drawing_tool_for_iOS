@@ -17,23 +17,14 @@ class ShapeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ibImageView: UIImageView!
     @IBOutlet weak var ibLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        //backgroundColor = .white
         clipsToBounds = true
         layer.cornerRadius = 5
-        //clipsToBounds = true
-        //view.backgroundColor = .red
         layer.borderWidth = 1
         layer.borderColor = UIColor.gray.cgColor
         ibLabel.font = UIFont.systemFont(ofSize: 18)
     }
-    
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        //updateContentStyle()
-//    }
     
     func setupCell(shapeName: String) {
         let image = UIImage(named: shapeName)
