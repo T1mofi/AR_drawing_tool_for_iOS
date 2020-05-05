@@ -5,9 +5,9 @@ Technologies: UIKit, ARKit, SceneKit
 
 Platform: iOS 13 and latter
 
-[Requirements](/Documents/Software%20Requirements%20Specification.md)
-[Diagrams](/Documents/Diagrams.md)
-[Code](/Code)
+[Requirements](/Documents/Software%20Requirements%20Specification.md)<br>
+[Diagrams](/Documents/Diagrams.md)<br>
+[Code](/Code)<br>
 
 ## Архитектура
 ### Содержание:
