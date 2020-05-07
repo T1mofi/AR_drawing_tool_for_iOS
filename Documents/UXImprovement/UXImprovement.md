@@ -31,5 +31,6 @@
 # Результаты
 ## Обучение пользователя
 <img src="https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/1.jpg" width="200" >
-## Улучшить интерфейс экрана выбора объекта  
+
+## Улучшение интерфейса экрана выбора объекта  
 <img src="https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/1.jpg" width="200" >
