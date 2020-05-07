@@ -30,6 +30,6 @@
 
 # Результаты
 ## Обучение пользователя
-<img src="https://github.com/anyatsal/MakaoFit/blob/master/ImprovementUX/1.jpg" width="200" > <img src="https://github.com/anyatsal/MakaoFit/blob/master/ImprovementUX/2.jpg" width="200" > <img src="https://github.com/anyatsal/MakaoFit/blob/master/ImprovementUX/3.jpg" width="200" > <img src="https://github.com/anyatsal/MakaoFit/blob/master/ImprovementUX/4.jpg" width="200" >  
+<img src="https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/1.jpg" width="200" >
 ## Улучшить интерфейс экрана выбора объекта  
-<img src="https://github.com/anyatsal/MakaoFit/blob/master/ImprovementUX/3-1.jpg" height="400" > <img src="https://github.com/anyatsal/MakaoFit/blob/master/ImprovementUX/3-2.jpg" height="400" >   
+<img src="https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/1.jpg" width="200" >
