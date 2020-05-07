@@ -43,10 +43,10 @@ after
 
 before
 
-<img src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/3.jpg width="200" > <img 
-src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/4.jpeg width="200" >
+<img src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/blob/master/Documents/UXImprovement/3.jpeg width="200" > <img 
+src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/blob/master/Documents/UXImprovement/4.jpeg width="200" >
 
 after
 
-<img src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/5.jpeg width="200" > <img 
-src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/edit/master/Documents/UXImprovement/6.jpeg width="200" >
+<img src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/blob/master/Documents/UXImprovement/5.jpeg width="200" > <img 
+src=https://github.com/T1mofi/AR_drawing_tool_for_iOS/blob/master/Documents/UXImprovement/6.jpeg width="200" >
